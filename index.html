@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator By Ardivan</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>- Calculator -</h1>
+    </header>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="aritmatika">
+        <h2>Aritmatika</h2>
+        <hr />
+        <form action="" method="post">
+          <label for="angka1">Masukkan Angka Pertama : </label>
+          <input type="number" name="angka1" id="angka1" />
+          <label for="angka2">Masukkan Angka Kedua : </label>
+          <input type="number" name="angka2" id="angka2" />
+          <span>
+            <button type="button" onclick="tambah()">+</button>
+            <button type="button" onclick="kurang()">-</button>
+            <button type="button" onclick="kali()">*</button>
+            <button type="button" onclick="bagi()">/</button>
+            <button type="button" onclick="sisabagi()">%</button>
+          </span>
+        </form>
+        <div class="hasil">
+          <h3>Hasil</h3>
+          <p>Pertambahan : <span id="tambah"></span></p>
+          <p>Pengurangan : <span id="kurang"></span></p>
+          <p>Perkalian : <span id="kali"></span></p>
+          <p>Pembagian : <span id="bagi"></span></p>
+          <p>Sisa hasil bagi : <span id="sisabagi"></span></p>
+        </div>
+      </div>
+
+      <div class="perbandingan">
+        <h2>Perbandingan</h2>
+        <hr />
+        <form action="" method="post">
+          <label for="angka3">Masukkan Angka Pertama : </label>
+          <input type="number" name="angka3" id="angka3" />
+          <label for="angka4">Masukkan Angka Kedua : </label>
+          <input type="number" name="angka4" id="angka4" />
+          <button type="button" onclick="cekHasil()">Cek Hasil</button>
+        </form>
+        <div class="hasil1">
+          <h3>Hasil</h3>
+          <p>Hasilnya adalah : <span id="hasilperbandingan"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright 2024 by @Ardivan</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
